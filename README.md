@@ -1,0 +1,1 @@
+A simple React app which serves as a portfolio for photographers.
