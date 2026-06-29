@@ -1,20 +1,28 @@
 import Container from "./Container";
+import heroImage from "../assets/images/temporary_pic1.jpg";
 
 function Hero() {
   return (
-    <section className="bg-zinc-900 text-white py-32">
+    <section
+        className="h-screen bg-cover bg-center"
+        style={{
+            backgroundImage: `url(${heroImage})`
+        }}
+    >
       <Container>
-        <h2 className="text-5xl font-bold">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <h1 className="text-6xl font-bold">
             Capturing Moments
-        </h2>
+          </h1>
 
-        <p className="mt-6 max-w-xl text-lg">
-            <p>{"{ Insert photos here }"}</p>
-        </p>
+          <p className="mt-4 text-xl">
+            Landscapes • Wildlife • Portraits
+          </p>
 
-        <button className="mt-8 rounded bg-white px-6 py-3 text-black">
-            View Gallery
-        </button>
+          <button className="mt-8 rounded bg-white px-6 py-3 text-black">
+            Explore Gallery
+          </button>
+        </div>
       </Container>
     </section>
   );
