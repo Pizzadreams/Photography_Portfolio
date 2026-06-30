@@ -3,10 +3,10 @@ import heroImage from "../assets/images/temporary_pic1.jpg";
 function Hero() {
   return (
     <section
-        className="relative h-screen bg-cover bg-center"
-        style={{
-            backgroundImage: `url(${heroImage})`
-        }}
+      className="relative h-screen bg-cover bg-center"
+      style={{
+          backgroundImage: `url(${heroImage})`
+      }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
@@ -20,7 +20,7 @@ function Hero() {
         </p>
 
         <button className="mt-8 rounded-lg bg-white px-8 py-3 font-semibold text-black hover:bg-gray-200 transition">
-          View Gallery
+          View Portfolio
         </button>
 
       </div>
