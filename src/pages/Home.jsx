@@ -5,7 +5,10 @@ import ContactForm from "../components/ContactForm";
 function Home() {
   return (
     <>
-      <Hero />
+      <div className="-mt-14">
+        <Hero />
+      </div>
+    
       <FeaturedGallery />
       <ContactForm />
     </>

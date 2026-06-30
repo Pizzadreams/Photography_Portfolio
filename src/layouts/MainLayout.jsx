@@ -7,7 +7,7 @@ function MainLayout() {
     <>
         <Navbar />
         {/* Whatever page you're on */}
-        <main>
+        <main className="pt-14">
             <Outlet />
         </main>
 
