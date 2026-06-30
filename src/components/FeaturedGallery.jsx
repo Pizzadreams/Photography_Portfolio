@@ -1,22 +1,21 @@
 import Container from "./Container";
 
 function FeaturedGallery() {
+  const featuredPhotos = photos.slice(0,3);
+
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="py-24 bg-gray-100">
+
       <Container>
-        <h2 className="text-center text-4xl font-bold">
-          Featured Gallery
+        <h2 className="text-4xl font-bold text-center">
+          Featured Work
         </h2>
 
-        <p className="mt-4 text-center text-gray-600">
-          A small selection of some favorite moments.
+        <p className="mt-4 mb-12 text-center text-gray-600">
+          A selection of recent photography.
         </p>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div className="h-64 rounded-lg bg-gray-300"></div>
-          <div className="h-64 rounded-lg bg-gray-300"></div>
-          <div className="h-64 rounded-lg bg-gray-300"></div>
-        </div>
+        
+        <GalleryGrid photos={featuredPhotos} />
       </Container>
     </section>
   );
