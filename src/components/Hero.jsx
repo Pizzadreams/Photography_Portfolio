@@ -3,7 +3,7 @@ import heroImage from "../assets/images/temporary_pic1.jpg";
 function Hero() {
   return (
     <section
-      className="relative h-screen bg-cover bg-center"
+      className="relative h-screen bg-cover bg-center pt-16"
       style={{
           backgroundImage: `url(${heroImage})`
       }}
