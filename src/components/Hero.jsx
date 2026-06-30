@@ -1,29 +1,29 @@
-import Container from "./Container";
 import heroImage from "../assets/images/temporary_pic1.jpg";
 
 function Hero() {
   return (
     <section
-        className="h-screen bg-cover bg-center"
+        className="relative h-screen bg-cover bg-center"
         style={{
             backgroundImage: `url(${heroImage})`
         }}
     >
-      <Container>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <h1 className="text-6xl font-bold">
-            Capturing Moments
-          </h1>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      
+      {/* Hero content */}
+      <div className="relative flex h-full flex-col items-center justify-center text-center text-white px-6">
+        <h1 className="text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+        
+        <p className="mt-6 mx-auto max-w-2xl text-xl text-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
 
-          <p className="mt-4 text-xl">
-            Landscapes • Wildlife • Portraits
-          </p>
+        <button className="mt-8 rounded-lg bg-white px-8 py-3 font-semibold text-black hover:bg-gray-200 transition">
+          View Gallery
+        </button>
 
-          <button className="mt-8 rounded bg-white px-6 py-3 text-black">
-            Explore Gallery
-          </button>
-        </div>
-      </Container>
+      </div>
     </section>
   );
 }
