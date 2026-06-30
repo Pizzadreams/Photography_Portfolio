@@ -16,7 +16,7 @@ function Hero() {
         <h1 className="text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
         
         <p className="mt-6 mx-auto max-w-2xl text-xl text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          [ Here, you'll find some of my favorite photography work. Feel free to explore the galleries, learn more about me, and get in touch if you'd like to collaborate or have any questions. ]
         </p>
 
         <button className="mt-8 rounded-lg bg-white px-8 py-3 font-semibold text-black hover:bg-gray-200 transition">
