@@ -14,7 +14,7 @@ function Navbar() {
       <Container>
         <div className="flex items-center justify-between py-4">
           <h1 className="text-xl font-bold">
-            Photography Portfolio
+            [Your Name] Photography
           </h1>
 
           <ul className="flex gap-8">
