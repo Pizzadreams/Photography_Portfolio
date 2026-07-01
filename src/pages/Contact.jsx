@@ -2,23 +2,27 @@ import Container from "../components/Container";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
 
+import { contact } from "../data/contact";
+
 function Contact() {
     return (
+        <section className="bg-white py-24">
+
         <Container>
-            <section className="py-24">
-            
-                <h1 className="mb-12 text-center text-5xl font-bold">
-                    Contact
-                </h1>
 
-                <ContactInfo />
+            <h1 className="mb-12 text-center text-5xl font-bold">
+            Contact
+            </h1>
 
-                <div className="mt-16">
-                    <ContactForm />
-                </div>
+            <ContactInfo contact={contact} />
 
-            </section>
+            <div className="mt-20">
+            <ContactForm />
+            </div>
+
         </Container>
+
+        </section>
     );
 }
 

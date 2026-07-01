@@ -1,10 +1,10 @@
-    import {
-        FaEnvelope,
-        FaPhone,
-        FaLocationDot,
-        FaInstagram,
-        FaFacebookF,
-    } from "react-icons/fa6";
+import {
+    FaEnvelope,
+    FaPhone,
+    FaMapMarkerAlt,
+    FaInstagram,
+    FaFacebookF,
+} from "react-icons/fa";
 
     function ContactInfo({
         email,
@@ -43,7 +43,7 @@
             </div>
 
             <div className="flex items-center gap-3">
-            <FaLocationDot className="text-gray-600" />
+            <FaMapMarkerAlt className="text-gray-600" />
             <span>{location}</span>
             </div>
 
@@ -79,4 +79,4 @@
     );
     }
 
-    export default ContactInfo;
+export default ContactInfo;
