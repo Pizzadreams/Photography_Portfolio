@@ -2,71 +2,136 @@ import { useState } from "react";
 import Container from "./Container";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+    const [formData, setFormData] = useState({
+            firstName: "",
+            lastName: "",
+            email: "",
+            subject: "",
+            message: "",
+    });
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+  const handleChange = (event) => {
+        setFormData((prev) => ({
+            ...prev,
+            [event.target.name]: event.target.value,
+        }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+        event.preventDefault();
 
-    console.log(formData);
+        console.log(formData);
 
-    setStatus("Your message has been sent. Thank you! I will get back to you as soon as I can.");
+    // Backend will be connected later.
+    setStatus(
+        "Your message has been sent. Thank you! I'll get back to you as soon as possible."
+    );
 
     setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      subject: "",
-      message: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: "",
+        message: "",
     });
   };
 
   return (
-    <section className="bg-white py-24">
-      <Container>
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-4xl font-bold">
-            Get In Touch
-          </h2>
+        <section className="py-24">
+        <Container>
+            <div className="mx-auto max-w-2xl rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-sm">
 
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            Reach out using the form below for any inquiries, or collaborations. I'll get back to you as soon as possible.
-          </p>
+            <h2 className="text-center text-1xl font-bold">
+                Like what you see? Let's capture a moment that lasts forever.
+            </h2>
 
-          <form
-            onSubmit={handleSubmit}
-            className="mt-12 space-y-6"
-          >
-            {/* First + Last Name */}
+            <p className="mx-auto mt-3 max-w-lg text-center text-gray-600 text-left">
+                For inquiries, please email me at [placeholder@email.com] or fill out the form below and I will get back to you as soon as I can.
+            </p>
 
-            {/* Email */}
+            <form
+                onSubmit={handleSubmit}
+                className="mt-8 space-y-5"
+            >
+                {/* First + Last Name */}
+                <div className="grid gap-4 md:grid-cols-2">
 
-            {/* Subject */}
+                    <input
+                        type="text"
+                        name="firstName"
+                        placeholder="First Name *"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        required
+                        className="rounded-lg border border-gray-300 p-3 outline-none transition focus:border-black"
+                    />
 
-            {/* Message */}
+                    <input
+                        type="text"
+                        name="lastName"
+                        placeholder="Last Name *"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        required
+                        className="rounded-lg border border-gray-300 p-3 outline-none transition focus:border-black"
+                    />
 
-            {/* Submit */}
+                </div>
 
-            {/* Status Message */}
+                {/* Email */}
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address *"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-lg border border-gray-300 p-3 outline-none transition focus:border-black"
+                />
 
-          </form>
-        </div>
-      </Container>
-    </section>
+                {/* Subject */}
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject *"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-lg border border-gray-300 p-3 outline-none transition focus:border-black"
+                />
+
+                {/* Message */}
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Your Message *"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-lg border border-gray-300 p-3 outline-none transition focus:border-black"
+                />
+
+                {/* Submit */}
+                <button
+                    type="submit"
+                    className="w-full rounded-lg bg-black py-3 font-medium text-white transition hover:bg-gray-800"
+                    >
+                    Send Inquiry
+                </button>
+
+                {/* Success Message */}
+                {status && (
+                <p className="text-center text-green-600">
+                    {status}
+                </p>
+                )}
+            </form>
+
+            </div>
+        </Container>
+        </section>
   );
 }
 

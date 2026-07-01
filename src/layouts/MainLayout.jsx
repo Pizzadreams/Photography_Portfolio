@@ -3,17 +3,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function MainLayout() {
-  return (
-    <>
-        <Navbar />
-        {/* Whatever page you're on */}
-        <main className="pt-14">
-            <Outlet />
-        </main>
+    return (
+        <div className="flex min-h-screen flex-col">
+            <Navbar />
 
-        <Footer />
-    </>
-  );
+            <main className="flex-1">
+                <Outlet />
+            </main>
+
+            <Footer />
+        </div>
+    );
 }
 
 export default MainLayout;
