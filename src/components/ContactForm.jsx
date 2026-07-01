@@ -44,7 +44,7 @@ function ContactForm() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            Reach out for any inquiries, collaborations, or just to say hello! Fill out the form below and I'll get back to you as soon as possible.
+            Reach out for any inquiries, collaborations, or just because! Feel free to reach out using the form below, and I'll get back to you as soon as possible.
           </p>
 
           <form
