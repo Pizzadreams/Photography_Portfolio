@@ -1,9 +1,14 @@
+import AboutHero from "../components/AboutHero";
+import AboutContent from "../components/AboutContent";
+import ContactForm from "../components/ContactForm";
+
 function About() {
-  return (
-    <h1 className="text-5xl p-10">
-      About
-    </h1>
-  );
+    return (
+        <>
+            <AboutHero />
+            <AboutContent />
+        </>
+    );
 }
 
 export default About;

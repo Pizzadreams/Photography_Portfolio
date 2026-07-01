@@ -43,7 +43,7 @@ function ContactForm() {
             Get In Touch
           </h2>
 
-          <p className="mt-4 text-center text-gray-600 text-left">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
             Reach out for any inquiries, collaborations, or just to say hello! Fill out the form below and I'll get back to you as soon as possible.
           </p>
 

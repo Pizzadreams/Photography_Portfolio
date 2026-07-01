@@ -53,7 +53,7 @@ function Lightbox({
 
     if (!image) return null;
 
-        return (
+    return (
     <div
         className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4"
         onClick={onClose}
@@ -66,7 +66,7 @@ function Lightbox({
             {/* Close button */}
             <button
                 onClick={onClose}
-                className="absolute right-2 top-2 z-50 rounded-full bg-black/60 px-3 py-2 text-white hover:bg-black"
+                className="fixed top-6 right-6 z-50 rounded-full bg-black/60 p-3 text-2xl text-white backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-black/80"
             >
                 ✕
             </button>
