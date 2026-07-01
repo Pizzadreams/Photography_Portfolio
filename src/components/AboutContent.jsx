@@ -42,20 +42,20 @@ function AboutContent() {
             </div>
 
             <div>
-            <h2 className="text-4xl font-bold tracking-tight">
+            <h2 className="text-4xl font-bold tracking-tight pl-9">
                 Behind the Lens
             </h2>
             <div className="mt-8 border-l-4 border-gray-900 pl-8">
-                <p className="text-lg leading-9 text-gray-700">
+                <p className="text-lg leading-7 text-gray-700">
+                Beep boop! This is a placeholder for you.
+                <br />
+                <br />
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-                <br />
-                <br />
-                Beep boop! This is a placeholder for you.
+                nulla pariatur.        
                 <br />
                 <br />
                 </p>
