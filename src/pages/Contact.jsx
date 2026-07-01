@@ -13,13 +13,11 @@ function Contact() {
                 <div className="mx-auto max-w-3xl text-center">
 
                     <h1 className="text-5xl font-bold">
-                        Let's Connect
+                        Let's Connect!
                     </h1>
 
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Whether you're looking to book a photography session,
-                        inquire about licensing, or simply have a question,
-                        I'd love to hear from you.
+                        [Insert your Call-To-Action here]
                     </p>
 
                 </div>
@@ -32,7 +30,7 @@ function Contact() {
 
                         <iframe
                             title="Dinosaur, Colorado"
-                            src="https://maps.app.goo.gl/heCNxn7Mhx6czJm7A"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24364.209047416116!2d-109.0264656291155!3d40.241837173935764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8745a5fae709b0e9%3A0x2a9ade53888285be!2sDinosaur%2C%20CO%2081610!5e0!3m2!1sen!2sus!4v1782946000836!5m2!1sen!2sus"
                             className="h-[420px] w-full"
                             loading="lazy"
                             allowFullScreen
