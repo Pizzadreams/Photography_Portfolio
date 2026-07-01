@@ -72,7 +72,30 @@ function Lightbox({
             </button>
 
             {/* Viewer */}
-            <div className="flex h-[75vh] w-full max-w-6xl items-center justify-center">
+            <div className="relative flex h-[75vh] w-full max-w-6xl items-center justify-center">
+
+                <div
+                    onClick={onPrevious}
+                    className="group absolute left-0 top-0 h-full w-2/5 cursor-pointer"
+                >
+                    <div className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-3 text-2xl text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                        ❮
+                    </div>
+                </div>
+
+                
+                <div className="absolute left-2/5 top-0 h-full w-1/5" 
+                />
+
+                <div
+                    onClick={onNext}
+                    className="group absolute right-0 top-0 h-full w-2/5 cursor-pointer"
+                >
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-3 text-2xl text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                        ❯
+                    </div>
+                </div>
+
                 <img
                     src={image.image}
                     alt={image.title}
@@ -110,20 +133,6 @@ function Lightbox({
             </div>
         </div>
 
-        {/* Navigation buttons (TEMP still global for now) */}
-        <button
-            onClick={onPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-3xl text-white"
-        >
-            ❮
-        </button>
-
-        <button
-            onClick={onNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-3xl text-white"
-        >
-            ❯
-        </button>
     </div>
 )};
 
