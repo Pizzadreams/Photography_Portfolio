@@ -8,7 +8,7 @@ import oranges1 from "../assets/images/oranges1.jpg";
 export const photos = [    
     {
         id: 1,
-        title: "Mountain",
+        title: "Mountain Range",
         category: "Nature Landscape",
         image: landscape1,
         showAttribution: true,

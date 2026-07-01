@@ -1,5 +1,5 @@
 /* Displaying a single image card with title and category */
-function ImageCard({ image }) {
+function ImageCard({ image, onImageClick }) {
     return (
         <div
             onClick={() => onImageClick(image)}
