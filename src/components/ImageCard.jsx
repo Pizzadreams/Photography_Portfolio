@@ -1,7 +1,11 @@
 /* Displaying a single image card with title and category */
 function ImageCard({ image }) {
     return (
-        <div className="overflow-hidden rounded-xl shadow-lg">
+        <div
+            onClick={() => onImageClick(image)}
+            className="cursor-pointer overflow-hidden rounded-xl bg-white shadow-lg transition-transform duration-200 hover:scale-105"
+        >
+
             <img
                 src={image.image}
                 alt={image.title}

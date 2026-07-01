@@ -14,7 +14,7 @@ function FeaturedGallery() {
         </h2>
 
         <p className="mt-4 mb-12 text-center text-gray-600">
-          Free images from Unsplash, check out the artists if you like their work or if you want to support them!
+          Free images from Unsplash, check out the artists if you like their work or if you want to show support!
         </p>
         
         <GalleryGrid photos={featuredPhotos} />
