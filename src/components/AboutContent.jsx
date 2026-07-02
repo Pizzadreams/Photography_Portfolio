@@ -8,14 +8,6 @@ function AboutContent() {
         <Container>
         {/* About Section */}
         <div className="grid items-center gap-16 lg:grid-cols-2">
-            <div className="flex justify-center">
-            <img
-                src={photographer}
-                alt="Photographer"
-                className="h-[600px] w-[420px] rounded-xl object-cover shadow-xl"
-            />
-            </div>
-
             <div>
                 <h2 className="text-4xl font-bold tracking-tight pl-9">
                     Behind the Lens
@@ -35,6 +27,14 @@ function AboutContent() {
                     <br />
                     </p>
                 </div>
+            </div>
+            
+            <div className="flex justify-center">
+                <img
+                    src={photographer}
+                    alt="Photographer"
+                    className="h-[600px] w-[420px] rounded-xl object-cover shadow-xl"
+                />
             </div>
         </div>
         </Container>
